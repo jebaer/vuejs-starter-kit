@@ -1,0 +1,47 @@
+@import "./colors.sass"
+@import "./fonts.sass"
+@import "./flex.sass"
+
+html, body
+  height: 100vh
+    
+body
+  min-height: 100vh
+  background-color: $blue
+  color: $white
+  margin: 0
+
+main 
+  display: flex
+  flex-direction: column
+  width: 100%
+  align-items: center
+  position: fixed
+  top: 75px
+  bottom: 55px
+  overflow-y: overlay
+  overflow: scroll
+  scrollbar-width: none
+  padding: 50px 0 
+  @media screen and ( min-width: 767px )
+    top: 115px 
+    bottom: 0px
+  &::-webkit-scrollbar
+    display: none
+
+/* width */
+::-webkit-scrollbar
+  width: 10px
+
+/* Track */
+::-webkit-scrollbar-track
+  background: #f1f1f1
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: #888
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: #555
+ 
