@@ -22,7 +22,7 @@ The installation wil be done with the packages described into package.json file.
 
 ## Run the application
 
-Once the application is done, throw the running command.
+Once the application is done, throw the running command
 
 `npm run serve`
 
