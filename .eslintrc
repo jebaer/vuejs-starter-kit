@@ -9,8 +9,7 @@
         "plugin:vue/recommended",
         "eslint:recommended",
         "prettier/vue",
-        "plugin:prettier/recommended",
-        "plugin:cypress/recommended"
+        "plugin:prettier/recommended"
     ],
     "env": {
         "browser": true,
@@ -19,8 +18,7 @@
         "node": true
     },
     "plugins": [
-        "prettier",
-        "cypress"
+        "prettier"
     ],
     "rules": {
         "prettier/prettier": [
