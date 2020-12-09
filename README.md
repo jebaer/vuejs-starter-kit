@@ -1,4 +1,4 @@
-# VueJS2 STARTER KIT
+# VueJS STARTER KIT
 
 A pre configured package to start a VueJS 2.6 project in the right way.
 
@@ -14,15 +14,15 @@ NPM is already installed on the computer.
 
 ## Install
 
-Clone the repository on your computer and run de install command.
+Clone the repository on your computer and run the install command.
 
 `npm install`
 
-The installation wil be done with the packages described into package.json file.
+The installation will be done based on the package.json file.
 
 ## Run the application
 
-Once the application is done, throw the running command
+Once the installation is done, fire the running command.
 
 `npm run serve`
 
@@ -36,13 +36,13 @@ All the code lives in _src_ folder.
 
 ```
 src
-|\_assets
-|\_components
-|\_mixins
-|\_router
-|\_services
-|\_store
-|\_views
+|_assets
+|_components
+|_mixins
+|_router
+|_services
+|_store
+|_views
 .App.vue
 .main.js
 ```
@@ -53,10 +53,10 @@ src
 
 **components**: This repository will contained all custom components.
 
-**mixins**: A rpository to store all repetitive task as field validation.
+**mixins**: A repository to store all repetitive task as field validation.
 
 **router**: Define the route of your entire application
 
 **services**: Preconfigured API fetcher with GET, POST and DELETE operation already implemented
 
-**store**: Where live the states of the application, based on Vuex.
+**store**: Where live the states, getters, actions and mutations of the application, based on Vuex.
