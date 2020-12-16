@@ -8,12 +8,12 @@
     "lint": "vue-cli-service lint",
     "css-build": "node-sass --omit-source-map-url public/sass/styles.sass public/css/styles.css",
     "css-watch": "npm run css-build && npm run css-build -- -w",
+    "watch:css": "postcss src/assets/css/tailwind.css -o public/css/main.css",
     "start": "npm run css-build && npm run serve",
     "beforeCommit": "eslint -c .commit.eslintrc ./src",
     "test": "jest --coverage=false"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.1",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "lodash": "^4.17.20",
@@ -33,6 +33,7 @@
     "@vue/cli-plugin-vuex": "^4.4.6",
     "@vue/cli-service": "~4.4.0",
     "@vue/test-utils": "^1.1.0",
+    "autoprefixer": "^10.1.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.1",
     "eslint": "^6.7.2",
@@ -43,7 +44,10 @@
     "jest": "^26.6.1",
     "node-loader": "^0.6.0",
     "node-sass": "^4.14.1",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
     "sass-loader": "^9.0.1",
+    "tailwindcss": "^2.0.2",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.11"
   }
