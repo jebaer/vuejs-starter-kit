@@ -1,6 +1,8 @@
 <template>
     <div id="app" class="bg-black-base text-white-base">
-        <main class="block fixed top-0 bottom-0 w-full">
+        <main
+            class="flex flex-col fixed top-0 bottom-0 w-full items-center justify-center"
+        >
             <router-view></router-view>
         </main>
     </div>

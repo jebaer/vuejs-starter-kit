@@ -14,9 +14,11 @@ const mutations = {
     // Here define some mutations
 };
 
-export default {
+const appModule = {
     state,
-    getters,
     actions,
     mutations,
+    getters,
 };
+
+export default appModule;

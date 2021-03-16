@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
-import appStore from './app/app.module';
+import appStore from './modules/app';
 
 Vue.use(Vuex);
 
