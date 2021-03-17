@@ -1,17 +1,27 @@
+import * as mut from './mutations';
+
+// Here define some states
 const state = {
-    // Here define some variables
+    name: 'world',
 };
 
+// Here define some getters
 const getters = {
-    // Here define some getters
+    getName: state => state.name,
 };
 
+// Here define some action function
 const actions = {
-    // Here define some action function
+    setName({ commit }, payload) {
+        commit(mut.SET_NAME, payload);
+    },
 };
 
+// Here define some mutations
 const mutations = {
-    // Here define some mutations
+    [mut.SET_NAME](state, { name }) {
+        state.name = name;
+    },
 };
 
 const appModule = {

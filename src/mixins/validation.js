@@ -1,13 +1,13 @@
 const validation = {
     methods: {
         /**
-         * Checks the validity of the given email
+         * Checks the validity of the given name
          *
-         * @returns {boolean} true, if the given email is valid
+         * @returns {boolean} the name is valid statement
          */
-        emailValidation() {
-            const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,6}$/;
-            return emailRegExp.test(this.email);
+        nameValidation() {
+            const validator = /^[a-z-]{2,}$/i;
+            return validator.test(this.name);
         },
     },
 };
