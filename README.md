@@ -1,4 +1,4 @@
-# VueJS STARTER KIT
+# VueJS 2 STARTER KIT
 
 A pre configured package to start a VueJS 2.6 project in the right way.
 
