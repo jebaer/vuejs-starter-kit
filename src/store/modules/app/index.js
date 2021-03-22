@@ -8,6 +8,10 @@ const state = {
 // Here define some getters
 const getters = {
     getName: state => state.name,
+    getCapitalizedName: state => {
+        const [firstLetter, ...restOfName] = state.name;
+        return firstLetter.toUpperCase() + restOfName.join('').toLowerCase();
+    },
 };
 
 // Here define some action function
