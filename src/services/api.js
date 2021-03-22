@@ -8,7 +8,13 @@ Vue.use(VueCookies);
 Vue.use(VueAxios, axios);
 
 const ApiService = {
-    init() {},
+    /**
+     * Defines a GET HTTP Request
+     *
+     * @param {string} resource the endpoint to request
+     * @param {object} headers the header of the request
+     * @returns {object} the returned data
+     */
     async get(resource, headers) {
         const data = await Vue.axios.get(resource, {
             headers: headers,
@@ -16,6 +22,14 @@ const ApiService = {
 
         return data;
     },
+    /**
+     * Defines a POST HTTP Request
+     *
+     * @param {string} resource the endpoint to request
+     * @param {object} data the body of the request
+     * @param {object} headers the header of the request
+     * @returns {object} the returned data
+     */
     async post(resource, data, headers) {
         const response = await Vue.axios
             .post(resource, data, {
@@ -29,6 +43,14 @@ const ApiService = {
             });
         return response;
     },
+    /**
+     * Defines a DELETE HTTP Request
+     *
+     * @param {string} resource the endpoint to request
+     * @param {object} data the body of the request
+     * @param {object} headers the header of the request
+     * @returns {object} the returned data
+     */
     async delete(resource, data, headers) {
         const response = await Vue.axios
             .delete(resource, { data, headers })

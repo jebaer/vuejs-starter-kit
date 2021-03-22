@@ -16,6 +16,12 @@ const getters = {
 
 // Here define some action function
 const actions = {
+    /**
+     * Calls the SET_NAME mutation
+     *
+     * @param {object} context the context of the action
+     * @param {object} payload the passed data
+     */
     setName({ commit }, payload) {
         commit(mut.SET_NAME, payload);
     },
@@ -23,6 +29,12 @@ const actions = {
 
 // Here define some mutations
 const mutations = {
+    /**
+     * Updates the state.name value
+     *
+     * @param {object} state the current state of the store
+     * @param {object} payload the passed data
+     */
     [mut.SET_NAME](state, { name }) {
         state.name = name;
     },
