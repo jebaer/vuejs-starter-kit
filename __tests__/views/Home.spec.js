@@ -1,4 +1,4 @@
-import Home from './../../src/views/Home.vue';
+import Home from 'Views/Home.vue';
 import { shallowMount } from '@vue/test-utils';
 
 let wrapper;

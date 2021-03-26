@@ -24,7 +24,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import validation from '../mixins/validation';
+import validation from '@/mixins/validation';
 
 export default {
     name: 'Hello',
@@ -50,7 +50,7 @@ export default {
             this.isInvalid = !this.nameValidation();
         },
         ...mapActions({
-            setName: 'setName',
+            setName: 'SET_NAME',
         }),
     },
 };

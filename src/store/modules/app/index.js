@@ -1,4 +1,4 @@
-import * as mut from './mutations';
+import * as _ from './mutations';
 
 // Here define some states
 const state = {
@@ -22,8 +22,8 @@ const actions = {
      * @param {object} context the context of the action
      * @param {object} payload the passed data
      */
-    setName({ commit }, payload) {
-        commit(mut.SET_NAME, payload);
+    [_.SET_NAME]({ commit }, payload) {
+        commit(_.SET_NAME, payload);
     },
 };
 
@@ -35,7 +35,7 @@ const mutations = {
      * @param {object} state the current state of the store
      * @param {object} payload the passed data
      */
-    [mut.SET_NAME](state, { name }) {
+    [_.SET_NAME](state, { name }) {
         state.name = name;
     },
 };

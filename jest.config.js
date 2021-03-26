@@ -17,4 +17,11 @@ module.exports = {
             experimentalCSSCompile: true,
         },
     },
+    moduleNameMapper: {
+        '^Components/(.*)$': '<rootDir>/src/components/$1',
+        '^Mixins/(.*)$': '<rootDir>/src/mixins/$1',
+        '^Router/(.*)$': '<rootDir>/src/router/$1',
+        '^Store/(.*)$': '<rootDir>/src/store/$1',
+        '^Views/(.*)$': '<rootDir>/src/views/$1',
+    },
 };
